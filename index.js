@@ -6,9 +6,9 @@ function nestedTarget(){
 }
 function increaseRankBy(n){
   var array = [];
-  array.push(document.getElementById('nested').querySelectorAll('.ranked-list').innerHTML);
+  array.push(document.getElementById('nested').querySelectorAll('.ranked-list'));
   for (var i = 0; i <array.length; i++){
-    array[i] = array[i]+n;
+    array[i].innerHTML = parseInt(array[i].innerHTML)+n;
   }
 }
 function deepestChild(){
